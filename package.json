@@ -1,0 +1,19 @@
+{
+  "name": "speedtest-cli",
+  "version": "1.0.0",
+  "description": "Sequential download speed test for any URL",
+  "type": "module",
+  "bin": { "speedtest": "dist/cli.js" },
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "test": "npm run build && node --test \"dist/**/*.test.js\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.6.0"
+  }
+}
